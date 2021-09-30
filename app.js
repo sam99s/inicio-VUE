@@ -6,11 +6,13 @@ new Vue({
         gameIsRunning: false
     },
     methods: {
+
         startGame: function(){
             this.playerHealth = 100,
             this.monsterHealth = 100,
             this.gameIsRunning = true
         },
+
         attack: function(){
             let max = 10;
             let min = 3;
@@ -23,15 +25,18 @@ new Vue({
             this.playerHealth -= damage
             
         },
+
         specialAttack: function(){
             return alert('Hello World')
             
         },
+
         heal: function(){
             return alert('Hello World')
             
         },
-        giveUP: function(){
+
+        giveUp: function(){
             return alert('Hello World')
         },
     }
