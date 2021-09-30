@@ -14,23 +14,25 @@ new Vue({
         attack: function(){
             let max = 10;
             let min = 3;
-            let damage = Math.max(math.floor(Math.random() * max) + 1, min)
+            let damage = Math.max(Math.floor(Math.random() * max) + 1, min)
             this.monsterHealth -= damage
 
             max = 12;
             min = 5;
-            damage = Math.max(math.floor(Math.random() * max) + 1, min)
+            damage = Math.max(Math.floor(Math.random() * max) + 1, min)
             this.playerHealth -= damage
             
         },
         specialAttack: function(){
+            return alert('Hello World')
             
         },
         heal: function(){
+            return alert('Hello World')
             
         },
         giveUP: function(){
-            
+            return alert('Hello World')
         },
     }
 })
